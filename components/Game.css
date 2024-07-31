@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/aliens5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Arial', sans-serif;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.game-board, .game-info {
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.game-info ol {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.game-info li {
+  margin-bottom: 5px;
+}
+
+.game-info button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4a90e2; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  color: #ffffff; 
+}
+
+.game-info button:hover {
+  background-color: #357abd; 
+  transform: scale(1.05);
+}
+
+.game-info button:active {
+  background-color: #2a5d9f; 
+  transform: scale(0.95);
+}
+
+.game-info div {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; 
+  margin-bottom: 20px;
+}
